@@ -42,17 +42,17 @@
 
 /* Dark Mode Styles */
 .dark-mode {
-  --col-main: var(--col-main-dark);
-  --col-asso: var(--col-asso-dark);
-  --col-gray: var(--col-gray-dark);
-  --col-blue: var(--col-blue-dark);
-  --col-off: var(--col-off-dark);
+  --col-main: var(--col-main-bright);
+  --col-asso: var(--col-asso-bright);
+  --col-gray: var(--col-gray-bright);
+  --col-blue: var(--col-blue-bright);
+  --col-off: var(--col-off-bright);
   transition: var(--transition-default);
 
-  --col-blue-op: var(--col-blue-bright);
-  --col-off-op: var(--col-off-bright);
-  --col-main-op: var(--col-main-bright);
-  --col-gray-op: var(--col-gray-bright);
+  --col-blue-op: var(--col-blue-dark);
+  --col-off-op: var(--col-off-dark);
+  --col-main-op: var(--col-main-dark);
+  --col-gray-op: var(--col-gray-dark);
 }
 
 
@@ -128,16 +128,6 @@ h1 {
   text-align: center;
 }
 
-.img_centered {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 77px;
-  height: 77px;
-  object-fit: cover;
-}
-
-
 
 h2, h2 a {
   line-height: var(--line-height);
@@ -157,7 +147,7 @@ h3 {
 
 h1 a, a {
   transition: var(--transition-default);
-  color: var(--col-gray);
+  color: var(--col-blue);
   text-decoration: none;
 }
 
@@ -456,3 +446,14 @@ footer {
           position: relative;
   }
 }
+
+.RESTRICTED, .RESTRICTED h2{
+  width: 100%; 
+  color: red; 
+  background-color: var(--col-off); 
+  text-align: center;
+  position: sticky;
+  top: 0;
+  margin-top: 0;
+}
+

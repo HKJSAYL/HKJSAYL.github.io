@@ -54,25 +54,24 @@
 	<meta name="msapplication-config" content="/images/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#333333">
 	<!-- Misc -->
-	<link rel="icon" href="./images/logos/Logo.png" type="image/png" sizes="HeightxWidth|any">
-	<link rel="stylesheet" type="text/css" href="./css/styles.css">
-	<link rel="stylesheet" type="text/css" href="./css/pages.css">
-	<script src="./js/script.js"></script>
+	<link rel="icon" href="../images/logos/Logo.png" type="image/png" sizes="HeightxWidth|any">
+	<link rel="stylesheet" type="text/css" href="../css/admin.css">
+	<script src="../js/script.js"></script>
 </head>
 
 <body>
 	<header>
 		<div>
-			<a href="/"><img class="logo" alt="Our logo" src="./images/logos/Logo.png"></a>
+			<a href="/"><img class="logo" alt="Our logo" src="../images/logos/Logo.png"></a>
 		</div>
 		<div class="menu">
 			<nav>
-				<a class="menuselection" href="./">Home</a>
-				<a href="./about">About Us</a>
-				<a href="./activities">Activities</a>
-				<a href="./articles">Blog</a>
-				<a href="./media">Media</a>
-				<a href="./contact">Contact Us</a>
+				<a href="../">Home</a>
+				<a href="../about">About Us</a>
+				<a href="../activities">Activities</a>
+				<a href="../articles">Blog</a>
+				<a href="../media">Media</a>
+				<a href="../contact">Contact Us</a>
 			</nav>
 		</div>
 		<div class="mode-switch" onclick="toggleDarkMode()">🌙</div>
@@ -82,32 +81,18 @@
     <h2>Due to security restrictions, some functions may be have been disabled</h2>
   </div>
 	<main>
-    Login page pending
+		<iframe data-tally-src="https://tally.so/embed/mDA5Pb?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="558" frameborder="0" marginheight="0" marginwidth="0" title="Admin Login FOrm"></iframe>
+		<script>var d = document, w = "https://tally.so/widgets/embed.js", v = function () { "undefined" != typeof Tally ? Tally.loadEmbeds() : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function (e) { e.src = e.dataset.tallySrc })) }; if ("undefined" != typeof Tally) v(); else if (d.querySelector('script[src="' + w + '"]') == null) { var s = d.createElement("script"); s.src = w, s.onload = v, s.onerror = v, d.body.appendChild(s); }</script>
 	</main>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 	<footer class="footer">
 		<h3><a class="footer" href="mailto:hkjsleaders@gmail.com" target="_blank">Email</a>
 			// <a class="footer" href="https://www.instagram.com/hkjsls" target="_blank">Instagram</a>
 			// <a class="footer" href="https://www.linkedin.com/company/hkjsayl/" target="_blank">LinkedIn </a></h3>
-		<p> © 2025 Hong Kong Joint School Association of Youth leaders </p>
+		<p> © 2025 Hong Kong Joint School Association of Youth Leaders </p>
 	</footer>
-	<script>
-		// Function to toggle dark mode
-		function toggleDarkMode() {
-			const currentMode = document.body.classList.contains('dark-mode') ? 'dark-mode' : 'light-mode';
-			const newMode = currentMode === 'dark-mode' ? 'light-mode' : 'dark-mode';
-			document.body.classList.toggle('dark-mode');
-			localStorage.setItem('mode', newMode);
-		}
-
-		// Check for saved mode on page load
-		document.addEventListener('DOMContentLoaded', function () {
-			const savedMode = localStorage.getItem('mode');
-			if (savedMode) {
-				document.body.classList.add(savedMode);
-			}
-		});
-	</script>
 </body>
 
 </html>
